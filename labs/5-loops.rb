@@ -20,3 +20,59 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # CHALLENGE
 # Deal a poker hand. Shuffle the deck and "deal" (i.e. display) a 5 card hand (i.e. 5 cards from the deck).
 # You will want to look at the documentation for Arrays: https://ruby-doc.org/core-2.7.0/Array.html
+
+# #assign the  suits index
+# s = 0
+
+# #Read from the arrays
+# suit = suits[s]
+
+# #Begin the outer loop
+# loop do
+#     if s == suits.size
+#         break
+#     end
+#   #Define ranks index
+#     r = 0
+#     rank = ranks[r]
+# #Begin inner loop
+#     loop do
+#         if r == ranks.size
+#             break
+#         end
+#      puts "#{ranks[r]} of #{suits[s]}" 
+#         r = r + 1
+#     end
+#     s = s + 1
+# end
+
+#Do Loop without comments
+# s = 0
+# suit = suits[s]
+
+# loop do
+#     if s == suits.size
+#         break
+#     end
+
+#     r = 0
+#     rank = ranks[r]
+
+#     loop do
+#         if r == ranks.size
+#             break
+#         end
+#         puts "#{ranks[r]} of #{suits[s]}"
+#     r = r + 1
+#     end
+    
+#     s = s + 1
+# end
+
+
+#Complete using nested for in loop
+for suit in suits
+    for rank in ranks
+        puts "#{rank} of #{suit}"
+    end
+end
